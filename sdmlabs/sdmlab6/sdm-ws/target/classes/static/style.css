@@ -1,0 +1,108 @@
+/*#chat {*/
+/*    height: 300px;*/
+/*    overflow-y: scroll;*/
+/*    border: 1px solid #ccc;*/
+/*    padding: 10px;*/
+/*}*/
+
+/*#messageForm {*/
+/*    margin-top: 10px;*/
+/*}*/
+
+/*#messageInput {*/
+/*    width: 200px;*/
+/*}*/
+
+/*button {*/
+/*    margin-left: 10px;*/
+/*}*/
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+h2, h3 {
+    color: #333;
+}
+
+#login-section {
+    text-align: center;
+    margin: 50px auto;
+    max-width: 400px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#admin-section {
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: #e9f7ef;
+    border-radius: 5px;
+    border-left: 4px solid #27ae60;
+}
+
+input, button {
+    margin: 5px;
+    padding: 5px;
+}
+
+input {
+    width: 200px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#auctions {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+}
+
+#auctions .auction-box {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#auctions .auction-box strong {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.bid-form {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.bid-form input {
+    flex: 1;
+    margin-right: 5px;
+}
+
+/* Minimal styles needed for new functionality */
+#auctions .expired-auction {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+[id^="countdown-"] {
+    color: #e67e22;
+    font-weight: bold;
+}
