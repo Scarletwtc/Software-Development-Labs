@@ -1,0 +1,112 @@
+Q1: Describe a complex general system (natural or artificial, organized or unorganized,
+  enterprise or product). Describe its hierarchy of systems. Propose some models to
+  reduce its complexity
+A1: Smart Home System, Type: Artificial system
+    Hierarchy:
+    Devices: lights, AC,
+    Sensors: motion sensors, temperature sensors
+    Controllers: smart hub (Alexa)
+    User Control: phone app or voice commands
+
+    Models to reduce complexity:
+    Grouping: Put devices into groups (e.g., all living room lights together)
+    Automation: Set simple rules (if motion detected, turn on light)
+    Standard Protocols: Use common systems like Wi-Fi or Bluetooth so devices talk easily
+    Simple App Control:	Control everything from one app instead of many
+    Voice Commands:	Use Alexa/Siri to avoid complex manual controls
+
+Q2:  What are the CMM levels? Find 5 software companies at level 3 CMM
+A2: CMM = Various Capability Maturity Levels
+    CMM Level 0 - Companies:
+        - Are the ones, which do not have any structured Processes, Tracking Mechanisms & Plans
+    CMM Level 1 - Companies: Work is Performed Informally
+        - teams put in extra hard work to achieve the results. These are primarily the startup companies. Such companies do not have any structured Tracking Mechanisms & defined Standards. The software development work is performed informally but it is not properly documented.
+    CMM Level 2 - Companies: Work is Planned and Tracked
+        - are the ones, which follow two main guidelines like 1) Defined guidelines 2) Focus on reusability. These companies have some planned processes within the teams and the teams are made to repeat them or follow these processes for all projects being handled by them. However these process are not standardized across the organization. All the teams within the organization do not follow the same standard.
+    CMM Level 3 - Companies: Work is Well-Defined
+        - are the ones, where the processes are well-defined and are followed throughout the organization. Such companies have strong team, well-defined guidelines, Focus on reusability & lay major focus on documentation.
+    CMM Level 4 - Companies: Work is Quantitatively Controlled
+        - are the ones, where the processes are well-defined and are followed throughout the organization. In such companies, Goals to be achieved are well defined and the actual output is measured.
+    CMM Level 5 - Companies: Work is based upon Continuous Improvement
+        - are the ones, which have well defined processes, which are properly measured. Such organizations have good understanding of IT projects which have good effect on the Organizational goals. They lay major emphasis on Research and development & are able to continuously improve their processes.
+
+    Five software/IT services companies at CMMI Level 3:
+    1 Tista Science and Technology corporation
+    2 I Link Systems private limited
+    3 Netsmartz
+    4 adaequare
+    5 Highlight technologies
+
+Q2   What is the difference between incremental and iterative in the software process?
+A2 Incremental and iterative both break development into smaller chunks, but they focus on different goals:
+
+  - Incremental
+    - You build the system in slices, you increment.
+    - Each increment adds a working piece.
+    - Users see new features as they go.
+
+  - Iterative
+    - You revisit and refine the same set of features over multiple passes.
+    - Each iteration improves design, fixes bugs, and enhances performance.
+
+  - Incremental = what you build in each step.
+  - Iterative = how you build it over repeated cycles.
+
+Q3  3) Describe the most complex software product in which you were involved personally.
+    Insist on:
+    • the information system that embeds it;
+    • product purpose and desired objectives to reach in the project;
+    • organization of the team. State the responsibilities of each member;
+    • distinguishing the separate stages in the lifecycle of the project. Enumerate the
+    activities performed in each one;
+    • to which process model taught at the course was your project most similar. What
+    were the differences between that model and your own?
+    • how could your project process have been improved?
+
+A3 I talked about web lab 4 haha
+    Host system:
+        Part of a simple Spring Boot web application with a MariaDB back end and Thymeleaf views.
+
+    Purpose & objectives:
+        Let users  view products and admins add new ones.
+
+    Team & roles:
+
+        I: wrote controllers, services, entities, and views.
+        Teacher: gave requirements and reviewed demos.
+
+    Lifecycle & activities:
+        Requirements: wrote user stories (“As an admin, I want to add products”).
+        Design: sketched flow for /products and /products/new.
+
+    Implementation:
+        Defined Product, User, controllers, security config.
+        Thymeleaf templates.
+
+        Testing: manual.
+        Deployment : ran mvn spring-boot:run, set up MariaDB schema.
+
+    Process model:
+        Most like Iterative: built the core feature first, then refined security and views.
+        Difference: no automated tests.
+
+    Improvements:
+        Add automated tests.
+
+Q4 Which of the software engineering paradigms and related methodologies presented
+    in this chapter do you think would be most effective? Why?
+A4  I’d pick an iterative-incremental approach as most effective.
+    Iterative-incremental: I deliver small, working slices of functionality, get fast feedback, and can change when requirements change.
+    Customer focus: Frequent demos ensure I am building what users actually need.
+    Risk control: Early increments surface technical or integration issues before they become huge.
+    Continuous improvement: let the team refine both product and process.
+
+Q5  Provide three examples of software development projects that would be amenable to
+    prototyping or spiral approach.
+A5  1 mobile application development
+    2 website design
+    3 game development
+Q6  Propose a specific software project that would be amenable to the incremental
+    model. Present a scenario for applying the model to the software
+A6 A simple Task-Management Web App (to-do list) built in increments.
+    I’d build a simple task‐management web app in small: first I’d deliver basic user login and the ability to add, edit, and delete tasks so people already have a working to-do list; next I’d add due dates and email reminders so it becomes genuinely helpful; then I’d introduce tags and filtering so users can organize their tasks; after that I’d let them share lists with friends and see real-time updates; and finally I’d layer on an analytics dashboard showing completed tasks over time—at each step I’d plan, design, implement, test, deploy, and gather feedback before moving on, ensuring value is delivered early and risk stays low.
